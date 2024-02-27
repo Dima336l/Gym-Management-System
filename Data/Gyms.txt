@@ -1,4 +1,4 @@
 Gym ID, GymName
-1, Gold's Gym
-2, Planet Fitness
-3, PureGym
+1,Gold's Gym
+2,Planet Fitness
+3,PureGym

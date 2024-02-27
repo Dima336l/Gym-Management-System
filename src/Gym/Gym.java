@@ -4,10 +4,21 @@ import java.util.ArrayList;
 
 public class Gym {
 
-    private String name;
-    ArrayList<TrainingSession> sessions;
-    ArrayList<Member> members;
+    private final int gymID;
+    private final String name;
+    private ArrayList<TrainingSession> sessions;
+    private ArrayList<Member> members;
+    private ArrayList<Trainer> trainers;
 
+    public Gym(String name, int gymID) {
+        this.name = name;
+        this.gymID = gymID;
+        this.sessions = new ArrayList<>();
+        this.members = new ArrayList<>();
+        this.trainers = new ArrayList<>();
+    }
+    
+   
     public void addMember(Member m) {
         members.add(m);
     }
@@ -24,12 +35,14 @@ public class Gym {
         sessions.remove(s);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getName() {
         return name;
     }
+
+    public int getGymID() {
+        return gymID;
+    }
+    
+    
 
 }

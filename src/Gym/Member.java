@@ -7,10 +7,11 @@ public class Member {
     private Gym gym;
     private Trainer trainer;
 
-    public Member(String name, String number, Gym gym) {
+    public Member(String name, String number, Gym gym, Trainer trainer) {
         this.name = name;
         this.number = number;
         this.gym = gym;
+        this.trainer = trainer;
     }
 
     public String getName() {

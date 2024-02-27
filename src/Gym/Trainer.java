@@ -4,16 +4,23 @@ import java.util.ArrayList;
 
 public class Trainer {
 
-    private String name;
-    private Gym gym;
+    private final int trainerID;
+    private final String name;
+    private final Gym gym;
     private ArrayList<Member> clients;
     private ArrayList<TrainingSession> sessions;
     
-    public Trainer(String name, Gym gym) {
+    public Trainer(int trainerID, String name, Gym gym) {
+        this.trainerID = trainerID;
         this.name = name;
         this.gym = gym;
         clients = new ArrayList<>();
         sessions = new ArrayList<>();
+    }
+    
+    
+     public int getTrainerID() {
+        return trainerID;
     }
     
     public String getName() {
@@ -32,14 +39,6 @@ public class Trainer {
         return sessions;
     }
     
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    public void setGym(Gym gym) {
-        this.gym = gym;
-    }
-    
     public void addMember(Member m) {
         clients.add(m);
     }
@@ -55,5 +54,10 @@ public class Trainer {
     public void removeSession(TrainingSession s) {
         sessions.remove(s);
     }
-    
+
+    @Override
+    public String toString() {
+        return "\nPersonal Trainer Info:" + "\nID: " + this.trainerID + "\nName: " + this.name + "\nGym: " + this.gym.getName();
+    }
+
 }
