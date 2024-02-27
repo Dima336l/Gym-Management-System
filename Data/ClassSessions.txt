@@ -1,0 +1,7 @@
+SessionID,GymID,TrainerID,ClassType,Day,Time,MaxMembers
+1,1,1,Pilates,Monday,10:00,10
+2,1,2,Zumba,Tuesday,11:00,15
+3,2,3,Yoga,Wednesday,12:00,12
+4,2,4,Body Balance,Thursday,13:00,8
+5,3,5,Spinning,Friday,14:00,20
+
